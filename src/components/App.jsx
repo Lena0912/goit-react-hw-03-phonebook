@@ -3,6 +3,7 @@ import { nanoid } from 'nanoid'
 import { ContactForm } from "./ContactForm/ContactForm";
 import { Filter } from "./Filter/Filter";
 import { ContactList } from "./ContactList/ContactList";
+import { Container } from "./Container/Container.styled";
 
 export class App extends Component {
 
@@ -58,13 +59,13 @@ export class App extends Component {
       contact.name.toLowerCase().includes(filter.toLowerCase())
     ) : contacts;
 
-    return <div>
+    return <Container>
       <h1>Phonebook</h1>
       <ContactForm onUpdateContactList={this.addNewContact} />
       <h2>Contacts</h2>
       <Filter onSearchContact={this.uppdateFilter} filterName={filter} />
       <ContactList users={visibleContacts} onDeleteContact={this.deleteContact} />
-        </div>
+        </Container>
       
 }
 };

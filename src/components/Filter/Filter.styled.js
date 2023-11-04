@@ -10,7 +10,7 @@ export const Container = styled.div`
 
 export const SearchField = styled.input`
   position: relative;
-  font-size: 16px;
+  font-size: 16px; 
   padding: ${p => p.theme.spacing(2)} ${p => p.theme.spacing(1)}
     ${p => p.theme.spacing(2)} ${p => p.theme.spacing(5)};
   border: 2px solid ${p => p.theme.colors.accent};

@@ -31,11 +31,13 @@ export const StyledInput = styled(Field)`
 
 export const StyledLabel = styled.label`
   position: relative;
-
+  max-width: 50%;
+  
   svg {
-    position: absolute;      
-    top: 10px;
-    left: 50px;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+
     color: ${p => p.theme.colors.green};
   }
 `;
